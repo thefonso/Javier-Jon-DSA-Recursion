@@ -42,3 +42,56 @@ function reverseString(str) {
   
 console.log(reverseString('random'));
 
+
+/* 4 */
+function nthTriangularNumber(n) {
+  if (n === 1) {
+    return 1;
+  } else
+  //return n * (n+1)/2;
+    return n + nthTriangularNumber(n-1);
+}
+
+console.log(nthTriangularNumber(6));
+
+
+/* 5 */
+const strSplitter = function(str) {
+  if (str.length != 10) {
+    return 'Please enter a date in the MM/DD/YYYY format!';
+  }
+  let strSplitter = [];
+  let month = str.charAt(0).concat(str.charAt(1));
+  let day = str.charAt(3).concat(str.charAt(4));
+  let year = str.charAt(6).concat(str.charAt(7).concat(str.charAt(8).concat(str.charAt(9))));
+
+  strSplitter.push(month, day, year);
+  return strSplitter;
+
+};
+
+console.log(strSplitter('01/01/2020'));
+console.log(strSplitter('00'));
+
+
+
+
+
+/* 6 */
+
+//1. input: 25    output: 11001
+
+//2.
+
+//3. code
+
+function binaryRep(num) {
+  //base case
+  if(num <= 0) {
+    return;
+  }
+  const binary = num % 2;
+  return binaryRep(Math.floor(num/2)) + binary;
+}
+
+console.log(binaryRep(1));
