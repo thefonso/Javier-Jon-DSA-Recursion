@@ -269,12 +269,9 @@ function iterate(data, depth = 0) {
 }
           
         
-      
+    
   
-  
-
-  
-
+/* 12 */
 //1. input: 25    output: 11001
 
 //2.
