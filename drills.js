@@ -78,6 +78,22 @@ console.log(strSplitter('00'));
 
 
 /* 6 */
+function fibIndex(num) {
+  if (num === 1 || num === 2) {
+    return 1;
+  }
+  if (num === 0) {
+    return undefined;
+  } else {
+    return fibIndex(num - 1) + fibIndex(num - 2);
+  }
+}
+
+console.log(fibIndex(8));
+  
+  
+
+  
 
 //1. input: 25    output: 11001
 
